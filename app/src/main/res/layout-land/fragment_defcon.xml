@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/defconFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".defconFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">>
+
+        <TextView
+            android:id="@+id/textDFC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="DEFCON"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="1"
+                android:textColor="@color/defcon1"
+                android:textSize="18sp"
+                app:backgroundTint="@color/emptyDefcon"
+                app:strokeColor="@color/defcon1"
+                app:strokeWidth="4dp" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@color/emptyDefcon"
+                android:text="2"
+                android:textColor="@color/defcon2"
+                android:textSize="18sp"
+                app:backgroundTint="#00FFFFFF"
+                app:strokeColor="@color/defcon2"
+                app:strokeWidth="4dp" />
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@color/emptyDefcon"
+                android:text="3"
+                android:textColor="@color/defcon3"
+                android:textSize="18sp"
+                app:backgroundTint="#00FFFFFF"
+                app:strokeColor="@color/defcon3"
+                app:strokeWidth="4dp" />
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@color/emptyDefcon"
+                android:text="4"
+                android:textColor="@color/defcon4"
+                android:textSize="18sp"
+                app:backgroundTint="#00FFFFFF"
+                app:strokeColor="@color/defcon4"
+                app:strokeWidth="4dp" />
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@color/emptyDefcon"
+                android:text="5"
+                android:textColor="@color/defcon5"
+                android:textSize="18sp"
+                app:backgroundTint="#00FFFFFF"
+                app:strokeColor="@color/defcon5"
+                app:strokeWidth="4dp" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
