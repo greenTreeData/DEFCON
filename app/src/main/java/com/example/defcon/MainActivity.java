@@ -8,7 +8,9 @@ import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 
+import android.util.Log;
 import android.view.View;
+import android.widget.RadioButton;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -48,7 +50,6 @@ public class MainActivity extends AppCompatActivity {
                 .commit();
 
         buttonConfig = findViewById(R.id.actionButtonConfig);
-
         buttonConfig.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -72,6 +73,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+
 
     @Override
     public void onRestoreInstanceState(Bundle savedInstanceState){

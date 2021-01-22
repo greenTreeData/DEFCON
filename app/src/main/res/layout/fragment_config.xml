@@ -31,30 +31,35 @@
             android:textColor="@color/white" />
 
         <RadioGroup
+            android:id="@+id/reminderRB"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:checkedButton="@id/radioButton">
+            android:checkedButton="@id/rbWeek"
+            >
 
             <RadioButton
-                android:id="@+id/radioButton"
+                android:id="@+id/rbWeek"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Every week"
+
+                android:text="@string/every_week"
                 android:textColor="@color/white" />
 
             <RadioButton
-                android:id="@+id/radioButton2"
+                android:id="@+id/rbDay"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Every day"
+
+                android:text="@string/every_day"
                 android:textColor="@color/white" />
 
             <RadioButton
-                android:id="@+id/radioButton3"
+                android:id="@+id/rbNone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="No reminder"
+
+                android:text="@string/no_reminder"
                 android:textColor="@color/white" />
 
         </RadioGroup>

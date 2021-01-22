@@ -1,5 +1,10 @@
 package com.example.defcon;
 
+import android.content.Context;
+import android.util.Log;
+
+import com.example.defcon.Persistance.defconPersistence;
+
 /**
  * Basic DEFCON domain class.
  *
@@ -7,17 +12,23 @@ package com.example.defcon;
 public class defconDomain {
 
     private static defconDomain myDefcon;
-    private int defconLVL=1;
+    private static Context appContext;
+    private static defconPersistence persistance;
+    private int defconLVL;
+    private static String domTAG = "DOMAIN";
 
-    public static defconDomain getDefcon() {
+    public static defconDomain getDefcon(Context c) {
         if(myDefcon ==null){
+            appContext = c;
             myDefcon = new defconDomain();
         }
+        Log.i(domTAG, "getDefcon: init controller.");
         return myDefcon;
     }
 
     private defconDomain(){
-
+        persistance = defconPersistence.getInstance(appContext);
+        defconLVL = persistance.loadDEFCON();
     }
 
     public int getDefconLVL() {
@@ -26,5 +37,6 @@ public class defconDomain {
 
     public void setDefcon(int newLVL) {
         this.defconLVL = newLVL;
+        persistance.saveDEFCON(newLVL);
     }
 }
