@@ -37,41 +37,16 @@
                 android:textSize="30sp" />
 
             <Button
-                android:id="@+id/button8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                android:text="1"
-                android:textColor="@color/defcon1"
-                android:textSize="18sp"
-                app:backgroundTint="@color/emptyDefcon"
-                app:strokeColor="@color/defcon1"
-                app:strokeWidth="4dp" />
-
-            <Button
-                android:id="@+id/button9"
+                android:id="@+id/button12"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
                 android:background="@color/emptyDefcon"
-                android:text="2"
-                android:textColor="@color/defcon2"
+                android:text="5"
+                android:textColor="@color/defcon5"
                 android:textSize="18sp"
                 app:backgroundTint="#00FFFFFF"
-                app:strokeColor="@color/defcon2"
-                app:strokeWidth="4dp" />
-
-            <Button
-                android:id="@+id/button10"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                android:background="@color/emptyDefcon"
-                android:text="3"
-                android:textColor="@color/defcon3"
-                android:textSize="18sp"
-                app:backgroundTint="#00FFFFFF"
-                app:strokeColor="@color/defcon3"
+                app:strokeColor="@color/defcon5"
                 app:strokeWidth="4dp" />
 
             <Button
@@ -88,16 +63,41 @@
                 app:strokeWidth="4dp" />
 
             <Button
-                android:id="@+id/button12"
+                android:id="@+id/button10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
                 android:background="@color/emptyDefcon"
-                android:text="5"
-                android:textColor="@color/defcon5"
+                android:text="3"
+                android:textColor="@color/defcon3"
                 android:textSize="18sp"
                 app:backgroundTint="#00FFFFFF"
-                app:strokeColor="@color/defcon5"
+                app:strokeColor="@color/defcon3"
+                app:strokeWidth="4dp" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@color/emptyDefcon"
+                android:text="2"
+                android:textColor="@color/defcon2"
+                android:textSize="18sp"
+                app:backgroundTint="#00FFFFFF"
+                app:strokeColor="@color/defcon2"
+                app:strokeWidth="4dp" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="1"
+                android:textColor="@color/defcon1"
+                android:textSize="18sp"
+                app:backgroundTint="@color/emptyDefcon"
+                app:strokeColor="@color/defcon1"
                 app:strokeWidth="4dp" />
 
         </LinearLayout>
